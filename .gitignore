@@ -5,6 +5,7 @@ npm-debug.log*
 # Cypress output
 cypress/videos/
 cypress/screenshots/
+cypress/reports/
 
 # Cypress config files (optional, if generated automatically)
 cypress.env.json
