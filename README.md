@@ -17,5 +17,6 @@
 
 ## Test Sonuç Raporu
 
-1.  Her koşumdan sonra cypress/reports dizini altında html dosya formatında aşağıdaki gibi yeni bir rapor oluşturulur: <img src="cypress\fixtures\images\htmlreport.png" alt="cypress\fixtures\images\htmlreport.png" width="713" height="251">
+1.  Her koşumdan sonra cypress/reports dizini altında html dosya formatında aşağıdaki gibi yeni bir rapor oluşturulur:
+    <img src="cypress\fixtures\images\htmlreport.png" alt="cypress\fixtures\images\htmlreport.png" width="713" height="251">
 2.  Rapor oluşturmak için projede [cypress-mochawesome-reporter](https://www.npmjs.com/package/cypress-mochawesome-reporter) aracından faydalanılmıştır.
