@@ -1,4 +1,6 @@
-# Çalışma Hakkında
+# Görev-1
+
+## Çalışma Hakkında 
 
 - Bu çalışma, e ticaret platformunda bir ürünün aratılarak detayına gidilmesi, sepete eklenmesi ve sepete eklendiğinin doğrulanmasını sağlayan bir otomasyondur. 
 - Bu çalışma Page Object Model yaklaşımı ile yazılmıştır.
@@ -26,3 +28,8 @@
 1.  Her koşumdan sonra cypress/reports dizini altında html dosya formatında aşağıdaki gibi yeni bir rapor oluşturulur:
     <img src="cypress\fixtures\images\htmlreport.png" alt="cypress\fixtures\images\htmlreport.png" width="713" height="251">
 2.  Rapor oluşturmak için projede [cypress-mochawesome-reporter](https://www.npmjs.com/package/cypress-mochawesome-reporter) aracından faydalanılmıştır.
+
+# Görev-2
+
+1. Manuel Test Case dokümanı:  https://docs.google.com/spreadsheets/d/1O6xIiueXGGol_9UWLA6n0ig909K7aXCbsdo0Lvr1d2k/edit?gid=0#gid=0
+2. Test bulguları sonuç raporu: https://docs.google.com/document/d/1Fsb0rTUOjfwQc3VvCW1vIX3KH_7WuviE6rEbmmrVnzo/edit#heading=h.grhqoo5upmbe
