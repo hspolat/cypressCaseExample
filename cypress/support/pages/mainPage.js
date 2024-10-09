@@ -1,3 +1,5 @@
+import productPage from "./productPage";
+
 class MainPage {
 
     Locators = {
@@ -7,13 +9,14 @@ class MainPage {
         */
         searchBar: '[placeholder="Aramak istediğiniz ürünü yazınız"]',
         searchBTN: '.search button svg',
+        autoCompleteListItem: '.autocomplete-suggestion a[href*="/urun"]'
 
     } 
 
-    searchProduct(product){
+    searchAndGoToProduct(product){
         cy.get(this.Locators.searchBar).should('be.visible').click().type(product);
-        cy.get(this.Locators.searchBTN).should('be.visible').click();
-        cy.url().should('include', '/arama')
+        cy.get(this.Locators.autoCompleteListItem).should('be.visible').click();
+        cy.get(productPage.Locators.addToCartBTN).should('be.visible');
     }
 
 }

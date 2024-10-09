@@ -1,10 +1,10 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  reporter: 'cypress-mochawesome-reporter', 
+  reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
-    reportPageTitle: 'custom-title',
+    reportPageTitle: 'Test Sonuç Raporu',
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
@@ -15,5 +15,4 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     },
   }
-  
 });

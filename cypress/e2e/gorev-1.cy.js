@@ -4,6 +4,8 @@
 */
 
 import mainPage from "../support/pages/mainPage";
+import productPage from "../support/pages/productPage";
+import cartPage from "../support/pages/cartPage";
 
 const screenTypes = ['macbook-16', 'ipad-2', 'iphone-xr', [414, 846]];
 
@@ -14,13 +16,17 @@ describe("Görev 1 - Test Otomasyonu Çalışması", () => {
 
     screenTypes.forEach((screen) => {
         it(`${screen} ekran boyutunda arama işlemi ile ürüne gidilip sepete ekleme işleminin doğrulanması`, () => {
-            if(Cypress._.isArray(screen)){
+            if (Cypress._.isArray(screen)) {
                 cy.viewport(screen[0], screen[1])
             } else {
                 cy.viewport(screen)
             }
-            
-            mainPage.searchProduct('Ürün');
+
+            mainPage.searchAndGoToProduct('Ürün');
+            productPage.addToCartAndCheckInformation('5');
+            cartPage.openCartPage();
+            cartPage.checkCartQuantityAndClear(5);
+
         })
     })
 })
